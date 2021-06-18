@@ -1,0 +1,87 @@
+﻿Task 1.
+Core [20 Marks]        
+
+1)  [2 Marks] Declare a pointer to a floating-point value with the identifier fp.
+        float *fp;                
+
+
+* 2)  [2 Marks] Declare a prototype for a function func1 that accepts two integer
+                                                        
+arguments and returns a pointer to a long integer.
+                        
+* long *func1 (int,int);
+*                                                                                                          
+3)  [2 Marks] Declare a one-dimensional array of integer pointers with 20 elements.
+int *arrayint [20];                
+*                                                                                                          
+4)  [2 Marks] Declare an array of strings whose initial values are "cyan", "magenta", and "yellow".
+const char *color[ ] ={“cyan”,”magenta”,”yellow”}  
+*                                                                                                  
+5)  [2 Marks] Define a structure that can represent the dimensions of a rectangle, with tagrect,and consisting of 2 float members width and length.
+struct rect {
+* float width;
+* float length;
+* }
+*                                                  
+6)  [2 Marks] Use typedef to define a new type rect_t from the structure defined in (6).
+        typedef rect_t{
+* float width;
+* float length;
+* }rect;
+*                                                                                                          
+7)  [4 Marks] Given the following declaration where rect_t is the type defined in (7), write a C statement that will allocate an array of 10 rect_t elements, and let p point to that memory.
+
+* rect_t rectangles  [10];                                                         
+rect_t *p ;
+p = &rectangles;
+                
+*                                 
+*                                                                                                          
+8)  [4 Marks] Given the following function prototype, write the function definition that will allocate memory for a rect_t, set the width and length to w and l, respectively, and return a pointer to the allocated memory.
+                                                                         
+* rect_t *create_rect(float w, float l){
+*         rect_t *rect1 = (rect_t *) malloc(sizeof(rect_t));
+*         if(rect1 != NULL){
+*                 (*rect1).width = w;
+*                 (*rect1).length = l;
+*         }
+*         return rect1;
+* }
+* * *                                                    
+*                         
+*                                 
+* Task 2.
+* Completion [8 Marks]                                   
+        Each character occupies 1 byte of memory. Suppose the value assigned to u is stored in (decimal) address 1100 and the value assigned to v is stored in (decimal) address 1101.
+                                        
+   * 1)  [2 Marks] What is the numeric value of the expression &u?
+        1100                
+   *                                                                                                          
+2)  [2 Marks] What is the numeric value of the expression &v?
+        1101                        
+   *                                                                                                          
+3)  [2 Marks] What is the numeric value of the expression *pv after the completion of line 4?
+        66                
+   *                                                                                                          
+4)  [2 Marks] What is the numeric value of the expression *pu after the completion of line 6? 
+         67
+   *    *    *                                                    
+   *                         
+   *                                         
+   * Task 3.
+   * Challenge [5 Marks]
+   * A C program contains the following statements:
+   *                         
+   * Suppose each short integer quantity occupies 2 bytes of memory, the array a is at (decimal) address 1102, pa is at (decimal) address 1114, and ppa is at (decimal) address 1118.
+   *                                         
+   * 1) [1 Mark] What is the numeric value of the expression a[0]?
+   * 1
+   * 2) [1 Mark] What is the numeric value of the expression &a[0]?
+   * 1102
+   * 3) [1 Mark] What is the numeric value of the expression a?
+   * 1102
+   * 4) [1 Mark] What is the numeric value of the expression ppa?
+   * 1118
+   * 5) [1 Mark] What is the numeric value of the expression *ppa + 2? 
+   * 1106                
+   *

@@ -1,0 +1,29 @@
+Core                
+1. wait();
+
+2.                                                                                  
+ PID of child for parent process
+0 for child process                                                 
+3. c is not valid
+                                                
+4.                                                  
+synchronous is blocked, it has sender block and receiver block when send message, it only sends when message is received and when receive message, it has receiver block until message is available and asynchronous is non blocked, when send it has the sender send message and continue and when receive, it has receive shown its willing to receive message and continue.                                
+   
+5. socket(int domain, int type, int protocol);
+                                                
+6.c,d                
+                                                                
+7. c
+
+
+Completion                                                         
+        
+1:
+before fork
+pidA = 0, pidB = -1, var = 81
+pidA = 561, pidB = 561 , var = 80
+2, I would say none of HELLO will be printed, because the system has already loads a new program within current process by using execl() and if the exec() system call was successful , the code after execl() will not be reached. so Hello will be printed 0 time.
+3，sendto
+Chanllenge
+(a)15
+(b)

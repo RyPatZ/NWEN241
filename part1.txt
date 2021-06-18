@@ -1,0 +1,63 @@
+CORE:
+1.A constructor is a member function which initializes an object of a class or structure, it has the same name as the class or structure itself and has no return type.
+2.A class that contains at least one pure virtual function member is called as an Abstract class. A pure virtual function (or abstract function) in C++ is a virtual function for which we don’t have implementation, we only declare it.
+3.
+1. valid
+2. invalid
+3. valid
+4. invalid
+5. invalid
+6. invalid
+7. valid
+8. valid
+9. invalid
+10. invalid
+
+
+4.        
+int i = 2;
+char str[] = “foo”;
+cout<<“str[” + i + “] = ” + str[i];
+5.
+class rational {
+     public:
+           rational :: rational(int n,int d ): numerator (n), denominator(d) {} 
+          float getFloat (){
+          float f = numerator / denominator;
+          return f;
+          }
+     private: 
+           int numerator;
+           int denominator;
+}
+
+
+COMPLETION:
+1. The inline function has slightly larger compiled code and will execute faster because function call overhead is avoided
+2.
+1. true
+2. true
+3. false
+4. false
+3. 
+1. using namespace foo;
+2. using namespace foo :: increment();
+
+
+CHALLENGE:
+namespace bar {
+using namespace foo;
+class Square : public Rectangle {
+public:
+Square :: Square (int h , int w){
+height = h;
+width = w;
+}
+virtual int height ()const {return height;}
+virtual int width()const {return width;}
+virtual int area()const {return height*width;}
+}
+private:
+int height;
+int width;
+}
